@@ -1,0 +1,13 @@
+原始文件: ./TSA/X_tsa.npy
+分片数量: 2
+合并代码示例:
+
+```python
+import numpy as np
+
+parts = []
+parts.append(np.load('./TSA/X_tsa_part1.npy'))
+parts.append(np.load('./TSA/X_tsa_part2.npy'))
+merged = np.concatenate(parts)
+np.save('./TSA/X_tsa.npy', merged)  # 恢复原始文件
+```

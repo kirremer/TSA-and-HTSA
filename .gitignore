@@ -1,0 +1,3 @@
+   # 忽略原始大文件
+   data/HTSA/X_htsa.npy
+   data/TSA/X_tsa.npy
